@@ -17,21 +17,31 @@ Stop rewriting loading flags, cancellation controllers, duplicate submission gua
 
 ## 📖 Full Interactive Documentation
 
-Explore our complete Astro Starlight documentation site online:
+Explore the complete Astro Starlight documentation site:
 
 👉 **[https://MahmoudAdelJR.github.io/ngx-task-suite/](https://MahmoudAdelJR.github.io/ngx-task-suite/)**
 
-| Section | Description & Link |
+| Section | Links |
 | :--- | :--- |
-| 🚀 **Getting Started** | [Installation](https://MahmoudAdelJR.github.io/ngx-task-suite/getting-started/installation/) & [Quick Start Guide](https://MahmoudAdelJR.github.io/ngx-task-suite/getting-started/quick-start/) |
-| 🧠 **Concepts** | [Architecture](https://MahmoudAdelJR.github.io/ngx-task-suite/concepts/architecture/) & [Task vs Resource / RxJS](https://MahmoudAdelJR.github.io/ngx-task-suite/concepts/task-vs-resource/) |
-| 🛠️ **Core API Reference** | [`createTask()`](https://MahmoudAdelJR.github.io/ngx-task-suite/api-reference/create-task/), [Task Signals](https://MahmoudAdelJR.github.io/ngx-task-suite/api-reference/task-signals/), [TaskExecution](https://MahmoudAdelJR.github.io/ngx-task-suite/api-reference/task-execution/), [TaskContext](https://MahmoudAdelJR.github.io/ngx-task-suite/api-reference/task-context/) |
-| 🚦 **Concurrency Policies** | [Overview](https://MahmoudAdelJR.github.io/ngx-task-suite/concurrency/overview/), [`drop`](https://MahmoudAdelJR.github.io/ngx-task-suite/concurrency/drop/), [`restart`](https://MahmoudAdelJR.github.io/ngx-task-suite/concurrency/restart/), [`enqueue`](https://MahmoudAdelJR.github.io/ngx-task-suite/concurrency/enqueue/), [`latest`](https://MahmoudAdelJR.github.io/ngx-task-suite/concurrency/latest/), [`parallel`](https://MahmoudAdelJR.github.io/ngx-task-suite/concurrency/parallel/) |
-| 🔌 **Handlers & Adapters** | [Promise Async/Await](https://MahmoudAdelJR.github.io/ngx-task-suite/handlers/promises/) & [RxJS HttpClient](https://MahmoudAdelJR.github.io/ngx-task-suite/handlers/observables/) |
-| ⚡ **Production Features** | [Timeouts](https://MahmoudAdelJR.github.io/ngx-task-suite/advanced/timeouts/), [Anti-Flicker](https://MahmoudAdelJR.github.io/ngx-task-suite/advanced/anti-flicker/), [Error Classification](https://MahmoudAdelJR.github.io/ngx-task-suite/advanced/error-handling/), [Progress & Retries](https://MahmoudAdelJR.github.io/ngx-task-suite/advanced/progress-retries/), [Lifecycle](https://MahmoudAdelJR.github.io/ngx-task-suite/advanced/lifecycle/) |
-| 🎨 **Template Directives** | [Directives Overview](https://MahmoudAdelJR.github.io/ngx-task-suite/directives/overview/) (`[taskTrigger]`, `[taskDisableWhilePending]`, `[taskBusy]`) |
-| 🧪 **Testing Utilities** | [Testing Guide](https://MahmoudAdelJR.github.io/ngx-task-suite/testing/overview/) (`createTaskHarness`, `createControlledTaskHandler`) |
-| ⚡ **Advanced** | [Zoneless Angular Integration](https://MahmoudAdelJR.github.io/ngx-task-suite/advanced/zoneless/) |
+| 🚀 **Getting Started** | [Installation](https://MahmoudAdelJR.github.io/ngx-task-suite/getting-started/installation/) · [Quick Start](https://MahmoudAdelJR.github.io/ngx-task-suite/getting-started/quick-start/) |
+| 🧠 **Concepts** | [Architecture](https://MahmoudAdelJR.github.io/ngx-task-suite/concepts/architecture/) · [Task vs Resource / RxJS](https://MahmoudAdelJR.github.io/ngx-task-suite/concepts/task-vs-resource/) |
+| 🛠️ **Core API Reference** | [`createTask()`](https://MahmoudAdelJR.github.io/ngx-task-suite/api-reference/create-task/) · [Task Signals](https://MahmoudAdelJR.github.io/ngx-task-suite/api-reference/task-signals/) · [TaskExecution](https://MahmoudAdelJR.github.io/ngx-task-suite/api-reference/task-execution/) · [TaskContext](https://MahmoudAdelJR.github.io/ngx-task-suite/api-reference/task-context/) |
+| 🚦 **Concurrency Policies** | [Overview](https://MahmoudAdelJR.github.io/ngx-task-suite/concurrency/overview/) · [`drop`](https://MahmoudAdelJR.github.io/ngx-task-suite/concurrency/drop/) · [`restart`](https://MahmoudAdelJR.github.io/ngx-task-suite/concurrency/restart/) · [`enqueue`](https://MahmoudAdelJR.github.io/ngx-task-suite/concurrency/enqueue/) · [`latest`](https://MahmoudAdelJR.github.io/ngx-task-suite/concurrency/latest/) · [`parallel`](https://MahmoudAdelJR.github.io/ngx-task-suite/concurrency/parallel/) |
+| 🔌 **Handlers & Adapters** | [Promise / AbortSignal](https://MahmoudAdelJR.github.io/ngx-task-suite/handlers/promises/) · [RxJS & HttpClient](https://MahmoudAdelJR.github.io/ngx-task-suite/handlers/observables/) |
+| ⚡ **Production Features** | [Timeouts](https://MahmoudAdelJR.github.io/ngx-task-suite/advanced/timeouts/) · [Anti-Flicker](https://MahmoudAdelJR.github.io/ngx-task-suite/advanced/anti-flicker/) · [Error Classification](https://MahmoudAdelJR.github.io/ngx-task-suite/advanced/error-handling/) · [Progress & Retries](https://MahmoudAdelJR.github.io/ngx-task-suite/advanced/progress-retries/) · [Lifecycle](https://MahmoudAdelJR.github.io/ngx-task-suite/advanced/lifecycle/) |
+| 🎨 **Template Directives** | [Directives Overview](https://MahmoudAdelJR.github.io/ngx-task-suite/directives/overview/) |
+| 🧪 **Testing Utilities** | [Testing Guide](https://MahmoudAdelJR.github.io/ngx-task-suite/testing/overview/) |
+| 🔬 **Advanced** | [Zoneless Angular](https://MahmoudAdelJR.github.io/ngx-task-suite/advanced/zoneless/) |
+
+---
+
+## 📦 Installation
+
+```bash
+npm install ngx-task
+```
+
+**Peer dependencies:** `@angular/core >= 16.0.0` · `rxjs >= 7.5.0`
 
 ---
 
@@ -39,7 +49,7 @@ Explore our complete Astro Starlight documentation site online:
 
 ```ts
 import { Component, inject } from '@angular/core';
-import { createTask, TaskTriggerDirective, TaskDisableWhilePendingDirective } from 'ngx-task';
+import { createTask } from 'ngx-task';
 import { TaskTriggerDirective, TaskDisableWhilePendingDirective } from 'ngx-task/directives';
 
 @Component({
@@ -53,11 +63,7 @@ import { TaskTriggerDirective, TaskDisableWhilePendingDirective } from 'ngx-task
       [taskArgs]="userForm"
       taskDisableWhilePending
     >
-      @if (saveProfile.pending()) {
-        Saving…
-      } @else {
-        Save Profile
-      }
+      @if (saveProfile.pending()) { Saving… } @else { Save Profile }
     </button>
 
     @if (saveProfile.error(); as err) {
@@ -70,13 +76,11 @@ export class ProfileEditorComponent {
   readonly userForm = { name: 'Alice', email: 'alice@example.com' };
 
   readonly saveProfile = createTask(
-    async (profile, { signal }) => {
-      return this.api.saveProfile(profile, { signal });
-    },
+    async (profile, { signal }) => this.api.saveProfile(profile, { signal }),
     {
-      concurrency: 'drop', // Prevent duplicate submissions while active
-      timeout: 15_000,     // 15 seconds timeout
-      pendingDelay: 150,   // Prevent visual flicker on fast requests
+      concurrency: 'drop', // Ignore duplicate clicks while running
+      timeout: 15_000,     // Auto-abort after 15 s
+      pendingDelay: 150,   // No spinner flash for sub-150 ms responses
     },
   );
 }
@@ -84,39 +88,41 @@ export class ProfileEditorComponent {
 
 ---
 
-## 🚦 Concurrency Policies Comparison
+## 🚦 Concurrency Policies
 
 | Policy | Behavior | Typical Use Case |
 | :--- | :--- | :--- |
-| **`drop`** | Ignores new invocations while an execution is running. | Form submission, Login, Payment checkout, Destructive actions |
-| **`restart`** | Supersedes active execution and runs the newest invocation immediately. | Search suggestions, Live form validation, Tab switching |
-| **`enqueue`** | Executes invocations sequentially in FIFO order. | Ordered audit logs, Sequential file uploads, Document patches |
-| **`latest`** | Finishes active execution, but keeps only the newest queued invocation (superseding intermediate ones). | Autosave document, Canvas/Slider sync, Editor autosave |
-| **`parallel`** | Runs up to `limit` executions simultaneously, queueing excess invocations. | Bulk file uploads, Preloading independent assets, Batch jobs |
+| **`drop`** | Ignores new invocations while one is running. | Form submit · Login · Payment checkout |
+| **`restart`** | Cancels active execution; runs newest immediately. | Live search · Filter inputs · Tab switching |
+| **`enqueue`** | Runs invocations sequentially in FIFO order. | Audit logs · Sequential file uploads |
+| **`latest`** | Finishes active; keeps only the newest queued invocation. | Autosave · Canvas/Slider sync |
+| **`parallel`** | Runs up to `limit` executions simultaneously. | Bulk uploads · Parallel asset preloads |
 
 ---
 
-## 🧠 Conceptual Reference
+## 🧠 Key Concepts
 
-### 1. Task vs Resource
-- **`Resource` (e.g. `rxResource` / `resource`):** Reactive value loading bound to dependency signals (declarative data fetching).
-- **`Task` (`ngx-task`):** Explicit command triggered imperatively by user interaction (form submit, button click, file upload) with explicit concurrency rules.
+### Task vs Angular `resource` / `rxResource`
+- **`resource`**: Declarative reactive data fetching driven by signal dependencies (reads).
+- **`ngx-task`**: Imperative action triggered by user gestures (form submit, click) with explicit concurrency rules (writes/commands).
 
-### 2. Task vs RxJS Flattening Operators
-RxJS flattening operators (`exhaustMap`, `switchMap`, `concatMap`, `mergeMap`) operate on stream transformations. `ngx-task` exposes execution handles, signals (`pending`, `running`, `result`, `error`), progress, anti-flicker timing, and component `DestroyRef` cleanup as a high-level Angular primitive.
+### Task vs RxJS Flattening Operators
+RxJS operators (`exhaustMap`, `switchMap`, `concatMap`, `mergeMap`) transform streams. `ngx-task` surfaces execution handles, signals (`pending`, `running`, `result`, `error`), progress, anti-flicker timing, and `DestroyRef` cleanup as a first-class Angular primitive — no subjects or manual subscriptions required.
 
-### 3. Cooperative Cancellation Contract
-`ngx-task` provides an `AbortSignal` for Promise handlers and automatically calls `unsubscribe()` for RxJS Observables. Handlers must observe `context.signal` (or pass it to `fetch` / `HttpClient`) to stop ongoing network I/O.
+### Cooperative Cancellation
+`ngx-task` provides an `AbortSignal` for Promise handlers and auto-calls `unsubscribe()` for RxJS Observables. Pass `context.signal` to `fetch()` or `HttpClient` to stop in-flight network I/O on cancel, timeout, or component destroy.
 
 ---
 
-## 📦 Package Entry Points
+## 📂 Package Entry Points
 
-- `ngx-task` — Core `createTask`, signals, schedulers, state machines, and adapters.
-- `ngx-task/directives` — Optional template directives (`[taskTrigger]`, `[taskDisableWhilePending]`, `[taskBusy]`).
-- `ngx-task/testing` — Test utilities (`createTaskHarness`, `createControlledTaskHandler`, `createDeferred`, `createTaskTestClock`).
+| Import | Contents |
+| :--- | :--- |
+| `ngx-task` | `createTask`, all signals, schedulers, state machine, and adapters |
+| `ngx-task/directives` | `TaskTriggerDirective`, `TaskDisableWhilePendingDirective`, `TaskBusyDirective` |
+| `ngx-task/testing` | `createTaskHarness`, `createControlledTaskHandler`, `createDeferred`, `createTaskTestClock` |
 
 ---
 
 ## ⚖️ License
-MIT © Antigravity Team
+MIT © [Mahmoud Adel](https://github.com/MahmoudAdelJR)
