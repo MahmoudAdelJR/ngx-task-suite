@@ -1,0 +1,19 @@
+{
+  "name": "ngx-task-workspace",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "vitest run",
+    "build": "tsc -p tsconfig.json",
+    "docs:dev": "npm --prefix docs run dev",
+    "docs:build": "npm --prefix docs run build"
+  },
+  "devDependencies": {
+    "@angular/compiler": "^18.0.0",
+    "@angular/core": "^18.0.0",
+    "rxjs": "^7.8.0",
+    "typescript": "^5.5.0",
+    "vitest": "^2.0.0"
+  }
+}

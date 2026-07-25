@@ -1,0 +1,24 @@
+{
+  "name": "ngx-task",
+  "version": "0.1.0",
+  "description": "Signal-first controlled asynchronous actions for Angular with cancellation, lifecycle cleanup, and explicit concurrency policies.",
+  "keywords": [
+    "angular",
+    "signals",
+    "async",
+    "task",
+    "concurrency",
+    "cancellation",
+    "rxjs",
+    "zoneless",
+    "promise",
+    "observable"
+  ],
+  "author": "Antigravity Team",
+  "license": "MIT",
+  "sideEffects": false,
+  "peerDependencies": {
+    "@angular/core": ">=16.0.0",
+    "rxjs": ">=7.5.0"
+  }
+}

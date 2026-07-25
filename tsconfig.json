@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "lib": ["ES2022", "DOM"],
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "declaration": true,
+    "declarationMap": true,
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": ".",
+    "paths": {
+      "ngx-task": ["projects/ngx-task/src/public-api.ts"],
+      "ngx-task/directives": ["projects/ngx-task/src/lib/directives/public-api.ts"],
+      "ngx-task/testing": ["projects/ngx-task/src/lib/testing/public-api.ts"],
+      "ngx-task/*": ["projects/ngx-task/src/lib/*"]
+    }
+  },
+  "include": ["projects/ngx-task/src/**/*"]
+}

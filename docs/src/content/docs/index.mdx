@@ -1,0 +1,98 @@
+---
+title: ngx-task
+description: Signal-first controlled asynchronous actions for Angular with explicit concurrency policies, cooperative cancellation, anti-flicker timing, and component lifecycle cleanup.
+template: splash
+hero:
+  tagline: Stop writing boilerplate loading flags, cancellation controllers, duplicate submission guards, and queue mechanics for Angular actions.
+  actions:
+    - text: Get Started
+      link: /getting-started/quick-start/
+      icon: right-arrow
+      variant: primary
+    - text: API Reference
+      link: /api-reference/create-task/
+      icon: external
+      variant: minimal
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## Why `ngx-task`?
+
+<CardGrid stack>
+  <Card title="Signal-First Reactivity" icon="star">
+    Native integration with `@angular/core` signals. Bind directly to `task.pending()`, `task.running()`, `task.result()`, and `task.error()` for fine-grained, flicker-free template updates.
+  </Card>
+
+  <Card title="Explicit Concurrency Control" icon="setting">
+    Answer the core question: *"What should happen when this operation is invoked again before it finishes?"* Select from `drop`, `restart`, `enqueue`, `latest`, or `parallel`.
+  </Card>
+
+  <Card title="Cooperative Cancellation" icon="close">
+    Automatic `AbortSignal` for Promise handlers and `unsubscribe()` for RxJS Observables. Cancels in-flight network requests on component destroy, timeout, or policy supersedes.
+  </Card>
+
+  <Card title="Production Ready Features" icon="rocket">
+    Built-in anti-flicker timing (`pendingDelay`, `minimumPendingDuration`), explicit timeouts, error classification, progress tracking, and manual retry support.
+  </Card>
+</CardGrid>
+
+---
+
+## Quick Example
+
+```ts title="profile-editor.component.ts"
+import { Component, inject } from '@angular/core';
+import { createTask, TaskTriggerDirective, TaskDisableWhilePendingDirective } from 'ngx-task';
+
+@Component({
+  selector: 'app-profile-editor',
+  standalone: true,
+  imports: [TaskTriggerDirective, TaskDisableWhilePendingDirective],
+  template: `
+    <button
+      type="button"
+      [taskTrigger]="saveProfile"
+      [taskArgs]="userForm"
+      taskDisableWhilePending
+    >
+      @if (saveProfile.pending()) {
+        Saving…
+      } @else {
+        Save Profile
+      }
+    </button>
+
+    @if (saveProfile.error(); as err) {
+      <p class="error">{{ err.message }}</p>
+    }
+  `,
+})
+export class ProfileEditorComponent {
+  private api = inject(ProfileApiService);
+  readonly userForm = { name: 'Alice', email: 'alice@example.com' };
+
+  readonly saveProfile = createTask(
+    async (profile, { signal }) => {
+      return this.api.saveProfile(profile, { signal });
+    },
+    {
+      concurrency: 'drop', // Ignores duplicate clicks while running
+      timeout: 15_000,     // Auto abort after 15 seconds
+      pendingDelay: 150,   // Prevents visual flicker on quick responses
+    },
+  );
+}
+```
+
+---
+
+## Concurrency Policies at a Glance
+
+| Policy | Behavior | Common Use Cases |
+| :--- | :--- | :--- |
+| <span class="policy-badge drop">drop</span> | Ignores new invocations while active. | Payment checkout, Form submission, Login |
+| <span class="policy-badge restart">restart</span> | Cancels active execution and runs newest. | Search autocomplete, Live filter, Tab switch |
+| <span class="policy-badge enqueue">enqueue</span> | Executes invocations sequentially in FIFO order. | Audit log stream, Sequential file upload |
+| <span class="policy-badge latest">latest</span> | Keeps active, but queues only the newest invocation. | Document autosave, Canvas/Slider sync |
+| <span class="policy-badge parallel">parallel</span> | Runs up to `limit` executions simultaneously. | Bulk file uploads, Parallel asset loading |

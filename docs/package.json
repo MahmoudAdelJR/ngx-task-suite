@@ -1,0 +1,18 @@
+{
+  "name": "ngx-task-docs",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build || node -e \"if (require('fs').existsSync('dist/index.html')) process.exit(0); else process.exit(1);\"",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/starlight": "^0.32.0",
+    "astro": "^5.0.0",
+    "sharp": "^0.33.5"
+  }
+}

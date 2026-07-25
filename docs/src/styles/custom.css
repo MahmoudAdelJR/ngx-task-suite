@@ -1,0 +1,113 @@
+/* Custom Starlight styling for ngx-task */
+:root {
+  --sl-color-accent-low: #2d1218;
+  --sl-color-accent: #e0234e;
+  --sl-color-accent-high: #fca5a5;
+  --sl-color-white: #ffffff;
+  --sl-color-gray-1: #f3f4f6;
+  --sl-color-gray-2: #e5e7eb;
+  --sl-color-gray-3: #9ca3af;
+  --sl-color-gray-4: #4b5563;
+  --sl-color-gray-5: #1f2937;
+  --sl-color-gray-6: #111827;
+  --sl-color-black: #0b0f17;
+  --sl-font-mono: 'Fira Code', 'Cascadia Code', 'JetBrains Mono', Consolas, monospace;
+}
+
+:root[data-theme='dark'] {
+  --sl-color-accent-low: #3b0712;
+  --sl-color-accent: #e0234e;
+  --sl-color-accent-high: #fda4af;
+  --sl-color-black: #080c14;
+  --sl-color-bg: #0b0f17;
+}
+
+/* Custom Gradient Titles */
+.gradient-text {
+  background: linear-gradient(135deg, #e0234e 0%, #a855f7 50%, #6366f1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+}
+
+/* Policy Badge Styles */
+.policy-badge {
+  display: inline-block;
+  padding: 0.25rem 0.6rem;
+  border-radius: 9999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-right: 0.5rem;
+}
+
+.policy-badge.drop {
+  background-color: rgba(239, 68, 68, 0.15);
+  color: #f87171;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+.policy-badge.restart {
+  background-color: rgba(245, 158, 11, 0.15);
+  color: #fbbf24;
+  border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.policy-badge.enqueue {
+  background-color: rgba(59, 130, 246, 0.15);
+  color: #60a5fa;
+  border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+.policy-badge.latest {
+  background-color: rgba(168, 85, 247, 0.15);
+  color: #c084fc;
+  border: 1px solid rgba(168, 85, 247, 0.3);
+}
+
+.policy-badge.parallel {
+  background-color: rgba(16, 185, 129, 0.15);
+  color: #34d399;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+/* Enhancements for code blocks */
+.expressive-code {
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+/* Hero card styling */
+.hero-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.hero-card {
+  padding: 1.5rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.hero-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(224, 35, 78, 0.4);
+}
+
+.hero-card h3 {
+  margin-top: 0;
+  font-size: 1.25rem;
+  color: var(--sl-color-white);
+}
+
+.hero-card p {
+  color: var(--sl-color-gray-3);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
