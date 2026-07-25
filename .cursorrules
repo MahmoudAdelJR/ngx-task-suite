@@ -1,0 +1,10 @@
+# Cursor AI Rules — PlanKit Command Suite
+
+You MUST follow the PlanKit multi-phase feature development standard defined in `artifacts/PLANKIT.md`.
+
+## Recognized PlanKit Commands
+
+- **plankit.plan**: Create `artifacts/current/<feature-name>/`, master `README.md`, and `phases/phase-N-*.md` specs.
+- **plankit.clarify**: Inspect codebase & specs, then ask structured clarifying questions before editing code.
+- **plankit.implement**: Read target spec AND `outputs/phase-1..N-1-output.md`, execute changes, write `outputs/phase-N-output.md`, and mark Phase N `[x]` in `README.md`.
+- **plankit.review**: Run `npm run test` & `npm run build`, validate DoD checklist, and move folder to `artifacts/archived/<feature-name>`.
