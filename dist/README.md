@@ -4,10 +4,8 @@
 
 [![Documentation](https://img.shields.io/badge/docs-Starlight-e0234e.svg)](https://MahmoudAdelJR.github.io/ngx-task-suite/)
 [![npm version](https://img.shields.io/npm/v/ngx-task.svg)](https://www.npmjs.com/package/ngx-task)
-[![npm downloads](https://img.shields.io/npm/dm/ngx-task.svg)](https://www.npmjs.com/package/ngx-task)
 [![license](https://img.shields.io/npm/l/ngx-task.svg)](LICENSE)
 [![bundle size](https://img.shields.io/bundlephobia/minzip/ngx-task)](https://bundlephobia.com/result?p=ngx-task)
-[![Angular](https://img.shields.io/badge/Angular-16%2B-dd0031?logo=angular)](https://angular.io)
 
 Stop rewriting loading flags, cancellation controllers, duplicate submission guards, and queue mechanics for every Angular action. `ngx-task` provides a single reactive primitive that explicitly answers the question:
 
