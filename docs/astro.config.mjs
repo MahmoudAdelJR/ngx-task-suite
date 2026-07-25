@@ -4,6 +4,8 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://MahmoudAdelJR.github.io',
+  base: '/ngx-task-suite/',
   integrations: [
     starlight({
       title: 'ngx-task',
@@ -12,7 +14,7 @@ export default defineConfig({
         src: './src/assets/logo.svg',
       },
       social: {
-        github: 'https://github.com/ngx-task/ngx-task',
+        github: 'https://github.com/MahmoudAdelJR/ngx-task-suite',
       },
       customCss: [
         './src/styles/custom.css',
